@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <%data.forEach(function (d) {%>
+        <p><%=d.year%></p>
+        <a href="/search/<%=d.year%>">Search</a>
+      <%})%>
+  </body>
+</html>
